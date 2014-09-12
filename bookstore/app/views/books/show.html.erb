@@ -7,4 +7,5 @@
 	<p><label>Price:</label> <%= number_to_currency(@book.price) %></p>
 </article>
 
-<%= link_to 'All Books', books_path %>
+<%= link_to 'All Books', books_path %> 
+| <%= link_to 'Edit', edit_book_path(@book) %>
