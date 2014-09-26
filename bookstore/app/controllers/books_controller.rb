@@ -3,7 +3,7 @@ class BooksController < ApplicationController
 
 	def index
 		@avilable_at = Time.now
-		@books = Book.all
+		@books = Book.order(:title).page(params[:page])
 	end
 
 	def show
